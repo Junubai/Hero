@@ -25,7 +25,7 @@
     });
     
     
-    
+    // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('nav-sticky');
@@ -70,7 +70,7 @@
     });
     
     
-    // Modal Video
+    
     $(document).ready(function () {
         var $videoSrc;
         $('.btn-play').click(function () {
@@ -150,42 +150,6 @@
             }
         }
     });
-
-
-    // Mobile-specific initialization
-$(document).ready(function() {
-   
-    $('.dropdown-toggle').click(function(e) {
-        if ($(window).width() < 992) {
-            e.preventDefault();
-            $(this).parent().toggleClass('show');
-            $(this).next('.dropdown-menu').toggleClass('show');
-        }
-    });
-
-    
-    $(document).click(function(e) {
-        if (!$(e.target).closest('.dropdown').length) {
-            $('.dropdown-menu').removeClass('show');
-            $('.dropdown').removeClass('show');
-        }
-    });
-
-    
-    $('.owl-carousel').on('touchstart', function() {
-        $(this).addClass('touch-mode');
-    });
-
-    
-    let lastTouchEnd = 0;
-    document.addEventListener('touchend', function(event) {
-        const now = (new Date()).getTime();
-        if (now - lastTouchEnd <= 300) {
-            event.preventDefault();
-        }
-        lastTouchEnd = now;
-    }, false);
-});
     
     
     
