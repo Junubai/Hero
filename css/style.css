@@ -174,10 +174,6 @@ a:focus {
     transition: all 0.3s;
 }
 
-.partner-item:hover img {
-    filter: grayscale(0%);
-}
-
 .partner-text {
     max-width: 800px;
     margin: 0 auto;
