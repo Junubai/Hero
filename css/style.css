@@ -2526,7 +2526,7 @@ a:focus {
         text-align: center;
     }
 }
-/* Responsive Design */
+
 @media (max-width: 992px) {
     .about-content {
         flex-direction: column;
@@ -2552,6 +2552,21 @@ a:focus {
         z-index: 999;
         overflow-y: auto;
     }
+
+    .footer-link h2 {
+    margin-bottom: 15px;
+    text-align: left; 
+}
+
+.footer-link a {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left; 
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+}
     
     .nav-links.active {
         display: flex;
