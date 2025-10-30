@@ -2,7 +2,7 @@
 /********* General CSS *********/
 /*******************************/
 body {
-    color: #777777;
+    color: hsl(0, 0%, 47%);
     font-weight: 500;
     background: #ffffff;
     font-family: 'Quicksand', sans-serif;
@@ -14,11 +14,11 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #4a4c70;
+    color: #051053;
 }
 
 a {
-    color: #4a4c70;
+    color: #10d15a;
     transition: .3s;
 }
 
@@ -35,7 +35,7 @@ a:focus {
     text-align: center; 
    font-size: 16px;
     font-weight: 500;
-    color: #777777;
+    color: #f3eded;
     border-radius: 0;
     border: 2px solid #008000;
     box-shadow: inset 0 0 0 0 #008000;
@@ -141,6 +141,52 @@ a:focus {
 
 .back-to-top:hover i {
     color: #008000;
+}
+/**********************************/
+.partners {
+    position: relative;
+    padding: 90px 0 60px 0;
+    background: #f9f9f9;
+}
+
+.partner-item {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.partner-item img {
+    max-width: 100%;
+    max-height: 80px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+
+.partner-item:hover img {
+    filter: grayscale(0%);
+}
+
+.partner-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.partner-text p {
+    font-size: 16px;
+    color: #666666;
 }
 
 
@@ -268,12 +314,12 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 15px 8px 15px;
-    color: #240046;
+    color: #10d15a;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #008000;
+    color: #10d15a;
     transition: none;
 }
 
@@ -530,7 +576,6 @@ a:focus {
     }
 }
 
-/* Custom styles for responsive carousel */
         .carousel {
             position: relative;
             overflow: hidden;
@@ -609,7 +654,7 @@ a:focus {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         
-        /* Overlay for better text readability */
+  
         .carousel-item::after {
             content: '';
             position: absolute;
@@ -621,7 +666,7 @@ a:focus {
             z-index: 1;
         }
         
-        /* Responsive adjustments */
+        
         @media (max-width: 1020px) {
             .carousel-text h1 {
                 font-size: 2.5rem;
@@ -673,7 +718,7 @@ a:focus {
         }
 
 
- /* Carousel Image Responsive Fix */
+
 .carousel-img {
     position: relative;
     width: 100%;
@@ -906,7 +951,7 @@ a:focus {
     transition: all 0.3s ease;
 }
 
-/* Overlay for better text readability */
+
 .carousel-item::before {
     content: '';
     position: absolute;
@@ -918,7 +963,7 @@ a:focus {
     z-index: 1;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .carousel-item {
         height: 80vh;
@@ -958,7 +1003,7 @@ a:focus {
     }
 }
 
-/* Ensure owl carousel dots are visible */
+
 .owl-carousel .owl-dots {
     position: absolute;
     bottom: 30px;
@@ -2117,6 +2162,87 @@ a:focus {
     border-color: #008000;
 }
 
+/* Climate Change Icons */
+.flaticon-ecology:before {
+    content: "\f1c0";
+}
+
+.flaticon-farming:before {
+    content: "\f1c1";
+}
+
+.flaticon-disaster:before {
+    content: "\f1c2";
+}
+
+.flaticon-community:before {
+    content: "\f1c3";
+}
+
+.flaticon-environment:before {
+    content: "\f1c4";
+}
+
+.flaticon-partnership:before {
+    content: "\f1c5";
+}
+
+
+.service-icon {
+    margin-bottom: 20px;
+    color: #27ae60;
+}
+            
+.service-icon i {
+    font-size: 60px;
+    color: #27ae60;
+    transition: all 0.3s;
+}
+            
+.service-item:hover .service-icon i {
+    color: #219653;
+    transform: scale(1.1);
+}
+            
+            
+.climate-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+            
+.climate-impact {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;           
+}
+
+
+
+.climate-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.climate-focus {
+    margin-bottom: 30px;
+}
+
+.climate-focus h3 {
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.climate-impact {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/climate-impact.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
 
 /**********************************/
 /*********** Sidebar CSS **********/
@@ -2652,7 +2778,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-/* Responsive Styles */
+
 @media (max-width: 991.98px) {
     .navbar-nav {
         text-align: center;
@@ -2797,7 +2923,7 @@ img {
     box-shadow: none;
 }
 
-/* Mobile Phones and tablets */
+
 @media (min-width: 320px) and (max-width: 767px) {
   section {
     padding-top: 50px;
